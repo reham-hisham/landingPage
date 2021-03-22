@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1 , shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/productcss.css">
+    <link rel="styelsheet" herf="css/stylesheet.css">
+</head>
+
+<body>
+<!--Nav bar using bootstrap-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+        <!--logo image-->
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                AnAnAsA
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mx-auto" id ="navbar__list">
+                  
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                        id="search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <ul class="list-group" id="list"></ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+ 
+    <!--ITEM IMAGES-->
+    <!--FIRST SECTION-->
+     <section id="section1" data-nav="Section 1" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1 col-md-2 col-sm-6">
+              <ul class="thumb">
+                  <li>
+                    <a href="#" onclick="checkWhichPicFirst();">
+                        
+                    <img src="images/dress1/no3.png " class="images" id="leftimage1">
+                    </a>
+                      </li>
+                      <li>
+                        <a  href="#"  onclick="checkWhichPicSec();">
+                        <img src="images/dress1/no2.png" class="images"  id="leftimage2">
+                        </a>
+                          </li>
+                          <li>
+                            <a  href="#" onclick="checkWhichPicThird();">
+                            <img src="images/dress1/no4.png"class="images"  id="leftimage3">
+                            </a>
+                              </li>
+                              <li>
+                                <a href="#"  onclick="checkWhichPicForth();">
+                                <img src="images/dress1/no5.png" class="images" id="leftimage4" >
+                                </a>
+                                  </li>
+              </ul>
+              <!--DRESS BIG IMAGE-->
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+           
+              <img id="toggleImage" src="images/dress1/2.png "  alt=""  >
+        
+            </div>
+            
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+                        <a href="#">GRECERELLE </a>
+                        <h5>GRECERELLE Women's Casual Loose Pocket Long Dress Short Sleeve Split Maxi Dresses</h5>
+                      
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <a href="#">  11,288 ratings</a>
+                        <hr>
+                        <p>price: <span class="price">$28.99</span></p>
+                        <button onclick="size();">Size Chart</button>
+                        <br>
+                        <br>
+                        <table>
+                            <tr>
+                              <th> Manufacturer size</th>
+                              <th>USA</th>
+                              <th>Bust (in inches)</th>
+                              <th>Waist(in inches)</th>
+                            </tr>
+                            <tr>
+                              <td>XS</td>
+                              <td> 0-2</td>
+                              <td>32-33</td>
+                              <td>24-25</td>
+
+                            </tr>
+                            <tr>
+                                <td>S</td>
+                              <td>4-6</td>
+                              <td>34-35</td>
+                              <td>26-27</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>8-10</td>
+                                <td>36-37</td>
+                                <td>28-29</td>
+                            </tr>
+                            <tr>
+                                <td>L</td>
+                                <td>12-14</td>
+                                <td>38.5-40</td>
+                                <td>30.5-32</td>
+                            </tr>
+                            <tr>
+                                <td>XL</td>
+                                <td> 16-18</td>
+                                <td>41.5-43</td>
+                                <td>33.5-35</td>
+                            </tr>
+                            <tr>
+                                <td>XXL</td>
+                                <td> 20-22 </td>
+                                <td>44.5-49 </td>
+                                <td>36.5-38 </td>
+                            </tr>
+                          </table>
+                           
+                          <form >
+                         <label >Size: </label>
+                            <select name="size" >
+                              <option value="XS">XS</option>
+                              <option value="S">S</option>
+                              <option value="M">M</option>
+                              <option value="L">L</option>
+                            </select>
+                 
+                         
+                          </form>
+                          <h6>Colors:</h6>
+                          <a  href="#"  onclick="changeImageRed();">
+                            <img src="images/dress1/red12.png" class="images2">
+                            </a>
+                            <a  href="#"  onclick="changeImageGrey();">
+                                <img src="images/dress1/grey1.png" class="images2">
+                                </a>
+                                <a  href="#"  onclick="changeImageGreen();">
+                                    <img src="images/dress1/green1.jpg" class="images2">
+                                    </a>
+                                    <a  href="#"  onclick="changeImageBlack();">
+                                        <img src="images/dress1/2.png" class="images2">
+                                        </a>
+                                        <br>
+                                        <br>
+                                            <p class="iteminfo">
+                                                <p>
+                                                    95% rayon , 5% spandex
+                                                </p>
+                                                <p>
+                                                    Material: 95% Rayon , 5% Spandex.Stretchy,soft and comfy.
+
+                                                </p>
+                                                <p>
+                                                    Short sleeve,V neck and Backless, Long dress,Pocket,Maxi dress, loose fit.
+                                                </p>
+                                                <p>
+                                                    Simple casual style, fit for everyday dressing, wear at home, travel, you can match with your pumps, heels, boot
+                                                </p>
+                                                <p>
+                                                    Please refer to the size measurement below before ordering
+                                                </p>
+                                                <p>
+                                                    US SIZE:X-Small=(US 2-4),Small=(US 6-8),Medium=(US 10-12),Large=(US 14-16),X-Large=(US 18-20),XX-Large=(US 22).Model's Measurement: Height: 176cm/5'9" Bust: 88cm/35" Waist: 59cm/23" Hip: 89cm/35" Wear: Small
+                                                </p>
+                                                
+                                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="rightBox">
+                                <span class="price">$28.99</span>
+                               <p>+ $53.85 Shipping & Import Fees Deposit to Egypt <a href="#"> Details </a></p> 
+                               <p>Arrives:<span class="bold">  July 15 - 27</span></p>
+                               <br>
+                               <button type="button" class="btn btn-success" onclick="addcar();">ADD TO CAR</button>
+
+                            </div>
+                        </div>
+        </div>
+    </div>
+     </section>
+     <!--End FIRST SECTION-->
+     <section id="section2" data-nav="Section 2" >
+    <hr>
+    
+    <h2> 4 stars and above <span class="smallSize">Sponsored</span></h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <img src="images/dress1/relat1.jpg" class="starimage">
+              <a href="#"> AUSELILY Women Short Sleeve Loose Plain Casual Long Maxi Dresses with Pockets</a>
+              <br>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <a>4,455</a>
+              <p>price: <span class="price">$28.99</span></p>
+
+            </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <img src="images/dress1/relat6.jpg" class="starimage">
+            <a href="#"> LONGYUAN Women's Summer Casual T Shirt Sundress Swimsuit Cover Ups with Pockets</a>
+            <br>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-starchecked" ></span>
+            <a>1,455</a>
+            <p>price: <span class="price">$23.99</span></p>
+
+          </div>
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <img src="images/dress1/relat2.jpg" class="starimage">
+        <a href="#"> AUSELILY Women Short Sleeve Loose Plain Casual Long Maxi Dresses with Pockets</a>
+        <br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <a href="#">4,455</a>
+        <p>price: <span class="price">$28.99</span></p>
+
+      </div>
+  
+  <div class="col-lg-2 col-md-4 col-sm-6">
+    <img src="images/dress1/relat3.jpg" class="starimage">
+    <a href="#"> AUSELILY Women Short Sleeve Loose Plain Casual Long Maxi Dresses with Pockets</a>
+    <br>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <a href="#">3,455</a>
+    <p>price: <span class="price">$8.99</span></p>
+
+  </div>
+<div class="col-lg-2 col-md-4 col-sm-6">
+    <img src="images/dress1/relat4.jpg" class="starimage">
+    <a href="#">Kancystore Women Plus Size Dresses Cold Shoulder Short Sleeve Casual Loose T-Shirt Swing Dress with…</a>
+    <br>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <a href="#">4,455</a>
+    <p>price: <span class="price">$20.99</span></p>
+
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6">
+    <img src="images/dress1/rel.jpg" class="starimage">
+    <a href="#">Meenew Women's Maxi Length Knit Tank High Side Slit Summer Beach Dress Green L..</a>
+    <br>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <a href="#">4,455</a>
+    <p>price: <span class="price">$20.99</span></p>
+
+  </div>
+  
+</div>
+    </div>
+    <hr>
+    <h4> Sponsored products related to this item</h4>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <img src="images/dress1/star1.jpg" class="starimage">
+              <a href="#"> AUSELILY Women Short Sleeve Loose Plain Casual Long Maxi Dresses with Pockets</a>
+              <br>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <a>4,455</a>
+              <p>price: <span class="price">$28.99</span></p>
+
+            </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <img src="images/dress1/star5.jpg" class="starimage">
+            <a href="#"> LONGYUAN Women's Summer Casual T Shirt Sundress Swimsuit Cover Ups with Pockets</a>
+            <br>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-starchecked" ></span>
+            <a>1,455</a>
+            <p>price: <span class="price">$23.99</span></p>
+
+          </div>
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <img src="images/dress1/star2.jpg" class="starimage">
+        <a href="#"> AUSELILY Women Short Sleeve Loose Plain Casual Long Maxi Dresses with Pockets</a>
+        <br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <a href="#">4,455</a>
+        <p>price: <span class="price">$28.99</span></p>
+
+      </div>
+  
+  <div class="col-lg-2 col-md-4 col-sm-6">
+    <img src="images/dress1/star3.jpg" class="starimage">
+    <a href="#"> AUSELILY Women Short Sleeve Loose Plain Casual Long Maxi Dresses with Pockets</a>
+    <br>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <a href="#">3,455</a>
+    <p>price: <span class="price">$8.99</span></p>
+
+  </div>
+<div class="col-lg-2 col-md-4 col-sm-6">
+    <img src="images/dress1/star4.jpg" class="starimage">
+    <a href="#">Kancystore Women Plus Size Dresses Cold Shoulder Short Sleeve Casual Loose T-Shirt Swing Dress with…</a>
+    <br>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <a href="#">4,455</a>
+    <p>price: <span class="price">$20.99</span></p>
+
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6">
+    <img src="images/dress1/star6.jpg" class="starimage">
+    <a href="#">Meenew Women's Maxi Length Knit Tank High Side Slit Summer Beach Dress Green L..</a>
+    <br>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star"></span>
+    <a href="#">4,455</a>
+    <p>price: <span class="price">$20.99</span></p>
+
+  </div>
+  
+</div>
+    </div>
+    </section>
+    <!--END SECTION 2-->
+    <hr>
+   <br>
+   <!--START SECTION 3-->
+       <section id="section3" data-nav="Section 3">
+   <h3>Product Description</h3>
+   <div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 ">
+          <div class="d-flex justify-content-center">
+              <br>
+            <img src="images/dress1/prand.jpg">
+        </div>
+        <br>
+        <br>
+         <p><span class="bold"> Women's Casual Loose Pocket Long Dress Short Sleeve Split Maxi Dresses</p>
+           <p> <span class="bold">      US SIZE:</span>XS=(US 2-4),S=(US 6-8),M=(US 10-12),L=(US 14-16),XL=(US 18-20),2XL=(US 22).</p>
+<p> <span class="bold">  Model's Measurement: Height:</span> 176cm/5'9" Bust: 88cm/35" Waist: 59cm/23" Hip: 89cm/35" Wear: S</p>
+    <p> <span class="bold">          Length (shoulder to hem):XS: </span>53"--- S: 53.5"---M: 54"---L: 54.5"---XL: 55"---XXL: 55.5"</p>
+        </div>
+    </div>
+   </div>
+   <br>
+   <br>
+   <div class="container">
+    <div class="row">
+    
+        <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
+          
+            <img src="images/dress1/fan1.jpg">
+
+        </div>
+        
+    </div>
+   </div>
+   <br>
+   <br>
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-lg-12 col-md-12 col-sm-12">
+   <pre >
+       <span class="changetext">
+    1)Q:What are the washing/drying instructions for this dress?
+
+    A:You can hand wash seperately in cold water.
+    
+    2)Q:What is this dress made out of?
+    
+    A:It's made for the Rayon and Spandex,it can be stretch.
+    
+    3)Q:I normally wear a size Medium in dresses, what size should I order?
+    
+    A:It's Loose fit ,you can choose it according normal size,our size are US standard size
+    
+    4)Q:What seasons is suitable?.
+    
+    A:It is fit for any season,you can wear it in Spring,Summer,Fall,Winter,simple but fashion style dress.
+</span>
+   </pre>
+        </div>
+    </div>
+  </div>
+   </section>
+   
+  <!--END OF THIRD SECTION -->
+    <!--BEGAIN THE FOURTH SECTION -->
+
+ <section id="section4" data-nav="Section 4">
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center">
+            <p class="midfont">
+                <span class="bold"> Feature<br> </span>
+                *Brand: GRECERELLE<br><br>
+
+                *Collar: V-Neck<br><br>
+
+                *Sleeve:Short Sleeve<br><br>
+
+                *Style: Fashion&Casual<br><br>
+
+                *Dress length: Full-length<br><br>
+
+                *Design: Solid Color, Short Sleeve, Loose fit, Side Pockets<br><br>
+
+                *Suitable Occasion: Casual/Party/Work/Holiday Style<br><br>
+
+                *Garment Care: Hand-wash and Machine washable, Hand Dry<br><br>
+            </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center">
+            <img src="images/dress1/fan2.jpg" alt="">
+        </div>
+    </div>
+  </div>
+  <br>
+  <h3 class="d-flex justify-content-center">
+    Customer Show
+
+  </h3>
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12  d-flex justify-content-center">
+         <img src="images/dress1/c1.jpg" id="cimage">
+            
+
+        </div>
+    </div>
+  </div>
+  <br>
+ <div class="d-flex justify-content-center">
+
+    <a href="#" onmouseover="document.getElementById('cimage').src='images/dress1/c1.jpg '">
+   <img src="images/dress1/c1.jpg" class="cimagee">
+ </a>
+   
+
+ <a href="#" onmouseover="document.getElementById('cimage').src='images/dress1/c2.jpg '">
+  <img src="images/dress1/c2.jpg" class="cimagee">
+</a> 
+  
+<a href="#" onmouseover="document.getElementById('cimage').src='images/dress1/c3.jpg '">
+  <img src="images/dress1/c3.jpg" class="cimagee">
+</a>
+ 
+<a href="#" onmouseover="document.getElementById('cimage').src='images/dress1/c4.jpg '">
+  <img src="images/dress1/c4.jpg" class="cimagee">
+</a>
+ </div>
+ 
+
+
+
+ <br>
+ <br>
+
+ <h3 class="bold">Photos of customer reviews</h3>
+ <div class="container">
+  <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6  ">
+        <img src="images/dress1/working.jpg">
+        <br>
+        <br>
+        <p>Working</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 ">
+        <img src="images/dress1/holiday.jpg">
+        <br>
+        <br>
+        <p>Holiday</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6  ">
+        <img src="images/dress1/casual.jpg">
+        <br>
+        <br>
+        <p>casual wear</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6  ">
+        <img src="images/dress1/party.jpg">
+        <br>
+        <br>
+        <p>Party</p>
+      </div>
+  </div>
+ </div>
+ <br>
+ <br>
+ </section>
+<!--end of prage and section 4-->
+
+
+    
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/productjs.js"></script>
+</body>
+
+</html>

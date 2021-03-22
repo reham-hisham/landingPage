@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+.images{
+  height: 90px;
+  width: 90px;
+  border: solid 1px #EFEFEF;
+}
+ul.thumb
+{
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+}
+ul.thumb li
+{
+    list-style: none;
+}
+a:hover img.images{
+  
+      box-shadow: 1px 1px 5px rgb(248, 134, 3);
+}
+.checked {
+  color: orange;
+}
+.price{
+  color: rgb(109, 0, 0);
+ font-size: larger;
+}
+table {
+  width: 100%;
+  box-shadow:2px 2px 2px 2px gray;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.images2{
+  width: 50px;
+  height: 50px;
+}
+.iteminfo{
+
+
+font-size: 14px;
+}
+.bold{
+  font-weight: bold;
+}
+.rightBox{
+  border: 1px solid black;
+padding: 15px;
+}
+.smallSize{
+  font-size: x-small;
+}
+.changetext{
+  font-family: 'Merriweather', serif
+}
+.midfont{
+  font-size: medium;
+}
+.cimagee{
+  height: 90px;
+  width: 90px;
+  border: solid 1px #EFEFEF;
+  margin: 20px;
+}
+a:hover img.cimagee{
+  border: solid 1px #CCC;
+  
+      box-shadow: 1px 1px 5px grey;
+}
+.comments{
+background-color: grey;
+}
+
+ li {
+  display: inline-block;
+  color: green;
+  padding-left: 20px;
+  font-size: large;
+  
+}
+/* ACTIVE CLASS STYLE */
+.your-active-class{
+  background-color: #666;
+  color: white;
+
+}
